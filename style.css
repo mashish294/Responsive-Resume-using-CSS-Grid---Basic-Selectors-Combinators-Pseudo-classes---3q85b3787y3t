@@ -1,164 +1,177 @@
 *{
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-body{
-    
-    background-color: #a6abad;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main-content{
-    display: grid;
-    grid-template-columns: 300px 700px;
-    min-height: 1000px;
-    width: 90%;
+body {
+background: #a6abad;
+align-items: center;
+display: flex;
+justify-content: center;
+min-height: 100vh;
 }
 
-.left-section{
-    grid-column: 300px;
-    background-color: #242531;
+.main-content {
+position: relative;
+display: grid;
+grid-template-columns: 300px 700px;
+width: 90%;
+max-width: 674px;
+min-height: 1000px;
+margin: 50px;
+margin-left: -20%;
 }
 
-.right-section{
-    grid-column: 300px / 1000px;
-       background-color: #f7f7f7;
-
+.main-content .left-section {
+grid-column: span 1;
+position: relative;
+background: darkcyan;
 }
 
-.left-content{
-    padding: 1rem;
+.main-content .right-section {
+grid-column: span 1 / span 2;
+position: relative;
+background: lightslategray;
 }
 
-.profile-image{
-    display: block;
-    margin: auto; 
-    border: 5px solid white;
-    border-radius: 30%;
-    width: 60%;
-}
-.name{
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.02px;
-    padding: 0.8rem;
-    color: #f7f7f7; 
+.profile-image {
+padding: 1rem;
+display: block;
+margin: auto;
+width: 350px;
+height: 300px;
 }
 
-.designation{
-    font-size: 1rem;
-    text-align: center;
-    text-transform: uppercase ;
-    padding-bottom: 0.5rem;
-    color: aqua;
+.profile-image img{
+width: 60%;
+height: 100%;
+border: 5px solid white;
+border-radius: 30%;
+margin-left: 30px;
 }
 
-.description{
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 1rem;
-    color: #f7f7f7;
-}
-.social-media {
-    display: flex;
-}
-
-.social-media i{
-    text-decoration: none;
-    color: skyblue;
-    letter-spacing: 0.02px;
-    padding: 1.2rem;
-    
-}
-.contact-info{
-    text-align: center;
-    margin-left: 40px;
-  }
-  .personal-detail {
-      color:skyblue;
-      position: relative;      
-  }
-  li.a{
-  display: flex;
-  margin: 10px; 
-  padding-left: 1rem
-  }
-  .a i{
-      letter-spacing:10px;
-  }
-  .skills-content{
-    padding: 30px;
-}
-.skills{
-    font-size: 0.75rem;
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem ;
-    padding-left: 0.5rem;
-    padding-right:0.5rem ;
-    text-transform: uppercase ;
-    color: white;
-    
-}
-.skill-name{
-    font-size: 0.65rem;
-    font-weight: 0.65rem;
-    text-align: left;
-    padding-bottom: 0.5rem;
-    color: white;
-    
+.name {
+font-size: 1.2rem;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.02px;
+padding: 0.8rem;
 }
 
-.progress-bar{
-    border: 1px  solid white;
-    height: 4px;
+.designation {
+font-size: 1rem;
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 0.5rem;
 }
 
-.right-main-content{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+.description {
+font-size: 0.75rem;
+text-align: center;
+padding: 1rem;
 }
 
-.right-title{
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 0.5rem;
-    letter-spacing: 1px; 
+.contact-item .icon {
+text-align: center;
+margin-left: 1.5rem;
+padding: 0.75rem;
 }
 
-.para{
-    padding: 0.5rem;
-}
-.box{
-    display: flex; 
+.contact-item ul {
+margin-top: 0.5rem;
 }
 
-.box>.text{
-    padding: 0.5rem;
-}
-h6{
-    margin-top: 10px;
-}
-.box .year{
-    min-width: 100px;
-    margin-top: 9px;
-}
-.projects{
-    padding: 0.5rem;
+.contact-item ul li {
+position: relative;
+list-style: none;
+padding: 0.2rem;
 }
 
-@media (max-width: 673px){
-    .main-content {
-        grid-template-columns: repeat(1, 1fr);
-        width: 90%;
-        min-height: 1000px;
-    }
+.contact-item ul li .icon-1 {
+  color: #064635;
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  margin-left: 0.5rem;
+}
+
+.skill-section ul li {
+list-style: none;
+}
+
+.skills {
+font-size: 0.75rem;
+text-align: center;
+text-transform: uppercase;
+padding: 1rem 0.5rem;
+}
+
+.skill-name {
+font-size: 1rem;
+font-weight: 0.65rem;
+text-align: left;
+padding-bottom: 0.5rem;
+}
+
+.progress-bar {
+height: 7px;
+border: 1px white solid;
+display: block;
+margin: 5px;
+}
+
+.progress-bar div {
+height: 100%;
+background: lightcoral;
+}
+
+.right-main-content {
+padding: 2rem 3rem;
+}
+
+.right-title {
+text-transform: uppercase;
+font-size: 1.2rem;
+font-weight: 700;
+padding: 0.5rem;
+letter-spacing: 1px;
+}
+
+.right-main-content p{
+padding: 0.5rem;
+padding-bottom: 15px;
+}
+
+.education {
+display: flex;
+flex-direction: row;
+}
+
+.education h4 {
+padding: 0.5rem;
+}
+
+.experience {
+display: flex;
+flex-direction: row;
+}
+
+.experience h4 {
+padding: 0.5rem;
+}
+
+.year h5 {
+margin-left: 8px;
+}
+
+@media only screen and (max-width: 673px) {
+.main-content {
+  width: 90%;
+  min-height: 1000px;
+  grid-template-columns:repeat(1, 1fr);
+}
 }
