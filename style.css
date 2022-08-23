@@ -141,7 +141,7 @@ body{
     display: flex; 
 }
 
-.box.text{
+.box>.text{
     padding: 0.5rem;
 }
 h6{
